@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLedger Gym</title>
+    <link rel="stylesheet" href="grand.css">
+</head>
+
+<body>
+    <header>
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <div class="logo">FitLedger Gym</div>
+        <nav class="navbar">
+            <ul>
+
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <aside class="sidebar">
+        <ul class="closed">
+            <li><a href="#dashboard" onclick="navigateToSection(event,'dashboard')">Dashboard</a></li>
+            <li><a href="#classes" onclick="navigateToSection(event, 'classes')">My Classes</a></li>
+            <li><a href="#trainer" onclick="navigateToSection(event, 'trainer')">My Trainers</a></li>
+            <li><a href="#membership" onclick="navigateToSection(event, 'membership')">My Membership</a></li>
+            <li><a href="#settings" onclick="navigateToSection(event)">Settings</a></li>
+        </ul>
+    </aside>
+    <main class="content" id="main">
+        <section class="welcome-section">
+            <h1>Welcome, Pranshu!</h1>
+            <p>Welcome back! Here's a summary of your recent activity and progress.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h2>Workout Streak</h2>
+                    <p>30 Days</p>
+                </div>
+                <div class="stat">
+                    <h2>Goals Achieved</h2>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+        <section class="dashboard-section" id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Upcoming Classes</h3>
+                    <ul>
+                        <li>Yoga - Tomorrow at 10 AM</li>
+                        <li>Cardio - Friday at 6 PM</li>
+                        <li>Strength Training - Saturday at 9 AM</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Recent Activities</h3>
+                    <ul>
+                        <li>Completed: Yoga - Yesterday</li>
+                        <li>Completed: Cardio - Two days ago</li>
+                        <li>Completed: Strength Training - Last week</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Progress Tracker</h3>
+                    <p>Graph or chart showing progress towards fitness goals.</p>
+                </div>
+                <div class="card">
+                    <h3>Membership Status</h3>
+                    <p>Current Plan: Gold Membership</p>
+                    <p>Expiry Date: 30th June 2024</p>
+                    <button>Renew Membership</button>
+                </div>
+            </div>
+        </section>
+        <section class="classes-section" id="classes">
+            <h2>Classes</h2>
+            <div class="class-filters">
+                <button>All</button>
+                <button>Yoga</button>
+                <button>Cardio</button>
+                <button>Strength Training</button>
+                <button>Dance</button>
+            </div>
+            <div class="class-list">
+                <div class="class-card">
+                    <h3>Yoga</h3>
+                    <p>Date: Tomorrow at 10 AM</p>
+                    <p>Trainer: Jane Doe</p>
+                    <button>Enroll</button>
+                </div>
+                <div class="class-card">
+                    <h3>Cardio</h3>
+                    <p>Date: Friday at 6 PM</p>
+                    <p>Trainer: John Smith</p>
+                    <button>Enroll</button>
+                </div>
+                <div class="class-card">
+                    <h3>Strength Training</h3>
+                    <p>Date: Saturday at 9 AM</p>
+                    <p>Trainer: Emily Johnson</p>
+                    <button>Enroll</button>
+                </div>
+                <div class="class-card">
+                    <h3>Dance</h3>
+                    <p>Date: Sunday at 11 AM</p>
+                    <p>Trainer: Michael Brown</p>
+                    <button>Enroll</button>
+                </div>
+            </div>
+        </section>
+        <section class="trainers-section" id="trainer">
+            <h2>Trainers</h2>
+            <div class="trainer-list">
+                <div class="trainer-card">
+                    <h3>Jane Doe</h3>
+                    <p>Specialty: Yoga</p>
+                    <p>Bio: Experienced yoga instructor with over 10 years of practice.</p>
+                    <button>Book Session</button>
+                </div>
+                <div class="trainer-card">
+                    <h3>John Smith</h3>
+                    <p>Specialty: Cardio</p>
+                    <p>Bio: Certified personal trainer specializing in cardio workouts.</p>
+                    <button>Book Session</button>
+                </div>
+                <div class="trainer-card">
+                    <h3>Emily Johnson</h3>
+                    <p>Specialty: Strength Training</p>
+                    <p>Bio: Strength training coach with a focus on weight lifting.</p>
+                    <button>Book Session</button>
+                </div>
+                <div class="trainer-card">
+                    <h3>Michael Brown</h3>
+                    <p>Specialty: Dance</p>
+                    <p>Bio: Dance instructor with expertise in various dance forms.</p>
+                    <button>Book Session</button>
+                </div>
+            </div>
+        </section>
+        <section class="membership-section" id="membership">
+            <h2>Membership</h2>
+            <div class="membership-details">
+                <div class="current-plan">
+                    <h3>Current Plan</h3>
+                    <p>Plan: Standard Membership</p>
+                    <p>Expiry Date: 30th June 2024</p>
+                    <button>Renew Membership</button>
+                </div>
+                <h3>Available Plans</h3>
+                <div class="available-plans">
+
+                    <div class="plan-card">
+                        <h4>Basic Membership</h4>
+                        <p>Access to gym equipment and group classes.</p>
+                        <p>Price: ₹1,999/month</p>
+                        <button>Choose Plan</button>
+                    </div>
+                    <div class="plan-card">
+                        <h4>Standard Membership</h4>
+                        <p>Includes personal training sessions and advanced classes.</p>
+                        <p>Price: ₹2,999/month</p>
+                        <button>Choose Plan</button>
+                    </div>
+                    <div class="plan-card">
+                        <h4>Premium Membership</h4>
+                        <p>All-inclusive access with premium facilities and benefits.</p>
+                        <p>Price: ₹3,999/month</p>
+                        <button>Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <h4><strong>Quick Links</strong></h4>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#trainer">Trainers</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4><strong>Contact Us</strong></h4>
+                <p>abc Gym Street, Kanpur, Uttar Pradesh</p>
+                <p>Email: support@fitledger.com</p>
+                <p>Phone: +91 7272010120</p>
+            </div>
+            <div class="footer-social">
+                <h4><strong>Follow Us</strong></h4>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-x.svg" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; FitLedger Gym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            const content = document.querySelector('.content');
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('closed');
+            sidebar.classList.toggle('open');
+        }
+        function navigateToSection(event, sectionId) {
+            event.preventDefault();
+            const sidebar = document.querySelector('.sidebar');
+            const sections = document.querySelectorAll('.content section');
+            sidebar.classList.remove('open');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
