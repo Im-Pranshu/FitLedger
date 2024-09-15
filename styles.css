@@ -76,7 +76,6 @@ nav .cta {
 }
 
 nav .cta:hover {
-    /* background: #FF7043; */
     background: white;
     color: #121212;
 }
@@ -133,7 +132,7 @@ nav .cta:hover {
 }
 
 .hero {
-    background: url('img/h1_hero.png') no-repeat center center/cover;
+    background: url('img/h1_hero.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
